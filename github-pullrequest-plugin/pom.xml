@@ -134,6 +134,31 @@
             <artifactId>workflow-cps</artifactId>
             <version>${workflow.version}</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.jenkins-ci.ui</groupId>
+                    <artifactId>jquery-detached</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.jenkins-ci.ui</groupId>
+                    <artifactId>ace-editor</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jenkins-ci.ui</groupId>
+            <artifactId>jquery-detached</artifactId>
+            <version>1.1.1</version>
+            <type>hpi</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jenkins-ci.ui</groupId>
+            <artifactId>ace-editor</artifactId>
+            <version>1.0.1</version>
+            <type>hpi</type>
+            <scope>test</scope>
         </dependency>
 
         <!--for tests-->
